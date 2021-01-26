@@ -6,20 +6,33 @@ import constants.Constants;
 //firstName →　自分の名字　lastName →　自分の名前で初期化しなさい。
 //なお、変数のアクセス修飾子は「private」とする。
 public class Check {
-    private String fistName;  // = "茂木";
+    private String firstName;  // = "茂木";
     private String lastName;  // = "遼太";
-    
-    private Check(String fistName, String lastName) {
-        this.fistName = "茂木";
-        this.lastName = "遼太";
+
+    private Check(String firstName, String lastName) {
+    this.firstName = "茂木";
+    this.lastName = "遼太";
+
     }
 //課題②
 //【Check.java】にてfirstNameとlastNameを引数で受け取って、
 //連結して表示させるメソッド「printName」を作成しなさい。
 //作成した関数のアクセス修飾子は「private」とする。
-    private void printName() {
-        System.out.println("printNameメソッド→"+this.fistName+" "+this.lastName);
+    protected String getfirstName(String firstName) {
+      return firstName;
     }
+    protected String getlastName(String lastName) {
+       return lastName;
+     }
+    private void printName() {
+       System.out.println("printName→"+firstName + lastName);
+
+   }
+
+
+   //private void printName() {
+     //  System.out.println("printNameメソッド→"+this.firstName+" "+this.lastName);
+   // }
 //課題③
 //【Check.java】にてPetクラスとRobotPetクラスをインスタンス化して、下記の完成イメージを出力させなさい。
 //printNameメソッド→名前
@@ -27,7 +40,7 @@ public class Check {
 //■ご主人様はhogeです
 //◇私はロボット。名前はR2D2。
 //◇ご主人様はルーク。
-   
+
     public static void main(String[] args) {
         Check a = new Check(null,null);
         a.printName();
@@ -37,9 +50,9 @@ public class Check {
         abc.introduce();
     }
 }
-    
-    
 
-    
-   
+
+
+
+
 

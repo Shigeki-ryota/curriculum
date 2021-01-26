@@ -8,7 +8,7 @@ public class Constants {
     public static final String CHECK_CLASS_R2D2 = "R2D2";
     public static final String CHECK_CLASS_LUKE = "ルーク"; 
 }
-        // TODO 自動生成されたメソッド・スタブ
+    
       
 
 
