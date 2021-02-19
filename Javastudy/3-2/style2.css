@@ -1,0 +1,52 @@
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.wrapper{
+    width: 400px;
+}
+.header{
+    height: 100px;
+    background-color: blue;
+}
+.left{
+    float: left;
+    height: 250px;
+    width: 150px;
+    background-color: aquamarine;
+}
+.right{
+    float: right;
+    height: 250px;
+    width: 250px;
+}
+.right-top-left{
+    float: left;
+    width: 150px;
+}
+.right-top-left-top{
+    height: 50px;
+    background-color: darkgoldenrod;
+}
+.right-top-left-bottom{
+    height: 100px;
+    background-color: deepskyblue;
+}
+.right-top-right{
+    float: right;
+    height: 150px;
+    width: 100px;
+    background-color: coral;
+}
+.right-bottom{
+    height: 100px;
+    width: 250px;
+    background-color: brown;
+}
+.footer{
+    height: 100px;
+    background-color: rgb(246, 69, 4);
+}
